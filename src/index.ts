@@ -11,12 +11,7 @@ function main() {
         throw new Error('Canvas error...');
     }
 
-    ctx.fillStyle = 'red';
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-    image.onload = () => {
-        ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
-    };
+    image.onload = () => ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
 }
 
 main()

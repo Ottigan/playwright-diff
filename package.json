@@ -7,9 +7,9 @@
     "scripts": {
         "dev": "vite --host",
         "build": "vite build",
-        "preview": "vite preview",
+        "preview": "vite preview --host",
         "test": "playwright test",
-        "start": "vite build && vite preview --host"
+        "start": "vite build && vite preview"
     },
     "keywords": [],
     "author": "",

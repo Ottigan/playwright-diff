@@ -14,7 +14,8 @@ jobs:
               uses: dawidd6/action-download-artifact@v6
               with:
                   workflow: playwright.yml
-                  pr: ${{github.event.pull_request.number}}
+                  workflow_conclusion: failure
+                  commit: ${{github.event.pull_request.head.sha}}
                   branch: main
                   name: artifact
                   name_is_regexp: true

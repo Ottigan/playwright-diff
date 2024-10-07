@@ -1,4 +1,4 @@
-name: Update screenshots
+name: Update
 
 on:
     workflow_dispatch:
@@ -13,10 +13,7 @@ jobs:
               id: download-artifact
               uses: dawidd6/action-download-artifact@v6
               with:
-                  # Optional, workflow file name or ID
-                  # If not specified, will be inferred from run_id (if run_id is specified), or will be the current workflow
                   workflow: playwright.yml
-                  # Optional, will get head commit SHA
                   pr: ${{github.event.pull_request.number}}
                   branch: main
                   name: artifact

@@ -9,7 +9,7 @@
         "build": "vite build",
         "preview": "vite preview --host",
         "test": "playwright test",
-        "start": "vite build && vite preview"
+        "start": "pnpm build && pnpm preview"
     },
     "keywords": [],
     "author": "",
